@@ -19,17 +19,17 @@ var nameSpace = nameSpace || {};
 nameSpace.modules = nameSpace.modules || {};
 
 nameSpace.modules.myModuleName = (function () {
-        'use strict';
-        var publicObject = {},
-            privateVar = "asta este o variabila privata, adica nu este returnata din functia autoapelanta";
+    'use strict';
+    var publicObject = {},
+        privateVar = "asta este o variabila privata, adica nu este returnata din functia autoapelanta";
 
-        function privateMethod() {
-            alert('asta este o metoda privata, nu poate fi accessata din scopul global');
-        }
+    function privateMethod() {
+        alert('asta este o metoda privata, nu poate fi accessata din scopul global');
+    }
 
-        publicObject.publicVar = "asta este o variabla publica, o sa fie disponibila din obiectul returnat.";
-        publicObject.publicMethod = function () {
-            alert('asta este o metoda publica, poate fi accesata din obiectul returnat');
-        };
-        return publicObject;
-    }());
+    publicObject.publicVar = "asta este o variabla publica, o sa fie disponibila din obiectul returnat.";
+    publicObject.publicMethod = function () {
+        alert('asta este o metoda publica, poate fi accesata din obiectul returnat');
+    };
+    return publicObject;
+}());
