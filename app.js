@@ -3,7 +3,9 @@
     nameSpace {object}
     @Description: We are basically creating an empty object here, unless
                   there is a global object called nameSpace, in which case we
-                  will clone it then. Should be in its own file.
+                  will clone it then. Should be in its own file. You could add
+                  some init function to it using the same code as in the bellow
+                  module, so as to set some defaults.
    ========================================================================== */
 var nameSpace = nameSpace || {};
 
@@ -21,15 +23,17 @@ nameSpace.modules = nameSpace.modules || {};
 nameSpace.modules.myModuleName = (function () {
     'use strict';
     var publicObject = {},
-        privateVar = "asta este o variabila privata, adica nu este returnata din functia autoapelanta";
+        privateVar = 'This is a private variable, meaning  it doesn\'t get returned on the imediately invoked function.';
 
     function privateMethod() {
-        alert('asta este o metoda privata, nu poate fi accessata din scopul global');
+        console.log('This is a private method, it can\'t be accessed from the global scope.');
+        return false;;
     }
 
-    publicObject.publicVar = "asta este o variabla publica, o sa fie disponibila din obiectul returnat.";
+    publicObject.publicVar = 'This one is a public var, it will be available on the returned object.';
     publicObject.publicMethod = function () {
-        alert('asta este o metoda publica, poate fi accesata din obiectul returnat');
+        console.log('This is a public method, it can be accessed from the returned object.');
+        return true;
     };
     return publicObject;
 }());
