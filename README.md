@@ -8,3 +8,5 @@ http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html
 
 [UPDATE]
 Added in a simple singleton pattern. 
+[UPDATE]
+Added in a publisher/subscriber pattern.
