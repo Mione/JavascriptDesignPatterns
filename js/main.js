@@ -20,7 +20,7 @@ var nameSpace = nameSpace || {};
    ========================================================================== */
 nameSpace.modules = nameSpace.modules || {};
 
-nameSpace.modules.myModuleName = (function () {
+nameSpace.modules.testModule = (function () {
     'use strict';
     var publicObject = {},
         privateVar = 'This is a private variable, meaning  it doesn\'t get returned on the imediately invoked function.';
