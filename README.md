@@ -1,7 +1,8 @@
-# Module, Singleton, Publisher/Subscriber Pattern
-Simple javascript implementation of the module pattern.
+# Javascript Patterns
 
-The barebone namespace-ing and module creation.
+Simple pure javascript implementation of the Module, Singleton, Publisher/Subscriber design patterns.
+
+Includes the barebone namespace-ing as well.
 
 For much more details do check this link: 
 http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html
