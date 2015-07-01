@@ -1,4 +1,4 @@
-# ModulePattern
+# Module, Singleton, Publisher/Subscriber Pattern
 Simple javascript implementation of the module pattern.
 
 The barebone namespace-ing and module creation.
